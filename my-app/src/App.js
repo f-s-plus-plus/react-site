@@ -37,7 +37,7 @@ class App extends Component {
           </div>
           <br />
           <div className="container">
-            <a href={resumeFile} download className="download-anchor"> Download Resume   </a>
+            <a href={resumeFile} download className="download-anchor"> Download Resume </a>
           </div>
           <br />
           <br />

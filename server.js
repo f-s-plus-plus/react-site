@@ -11,5 +11,5 @@ app.get('*', (req,res) => {
   res.sendFile(path.join(__dirname, '../my-app/build/index.html'));
 })
 
-const port = 802;
+const port = 80;
 app.listen(port, () => console.log("SERVER STARTED SUCCESSFULLY ON PORT " + port));
