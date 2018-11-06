@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/profile-pic.9d143525.png"
   },
   {
-    "revision": "938c6e20c6b4fa70a8dc",
-    "url": "/static/css/main.aaaa827a.chunk.css"
+    "revision": "85ea67e6cb6a206e0516",
+    "url": "/static/css/main.486e0d40.chunk.css"
   },
   {
-    "revision": "912ec66d7572ff821749319396470bde",
-    "url": "/static/media/fontawesome-webfont.912ec66d.svg"
+    "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
+    "url": "/static/media/fontawesome-webfont.acf3dcb7.svg"
   },
   {
-    "revision": "dfc01206d1e695e8caf6",
-    "url": "/static/js/1.dfc01206.chunk.js"
+    "revision": "c093aed3d3d2f77d5273",
+    "url": "/static/js/1.c093aed3.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -28,31 +28,31 @@ self.__precacheManifest = [
     "url": "/static/media/Gidole-Regular.5faa0c05.otf"
   },
   {
-    "revision": "938c6e20c6b4fa70a8dc",
-    "url": "/static/js/main.938c6e20.chunk.js"
-  },
-  {
-    "revision": "fee66e712a8a08eef5805a46892932ad",
-    "url": "/static/media/fontawesome-webfont.fee66e71.woff"
-  },
-  {
-    "revision": "af7ae505a9eed503f8b8e6982036873e",
-    "url": "/static/media/fontawesome-webfont.af7ae505.woff2"
+    "revision": "85ea67e6cb6a206e0516",
+    "url": "/static/js/main.85ea67e6.chunk.js"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
     "url": "/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
+    "revision": "af7ae505a9eed503f8b8e6982036873e",
+    "url": "/static/media/fontawesome-webfont.af7ae505.woff2"
+  },
+  {
+    "revision": "fee66e712a8a08eef5805a46892932ad",
+    "url": "/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  {
     "revision": "b06871f281fee6b241d60582ae9369b9",
     "url": "/static/media/fontawesome-webfont.b06871f2.ttf"
   },
   {
-    "revision": "dfc01206d1e695e8caf6",
-    "url": "/static/css/1.f7ecf54c.chunk.css"
+    "revision": "c093aed3d3d2f77d5273",
+    "url": "/static/css/1.25bbebaa.chunk.css"
   },
   {
-    "revision": "3fabae55be88d60e14ee827ef44750cc",
+    "revision": "ad31b772f3afe8d15f4847409c8e78bd",
     "url": "/index.html"
   }
 ];
