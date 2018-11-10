@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/profile-pic.9d143525.png"
   },
   {
-    "revision": "85ea67e6cb6a206e0516",
-    "url": "/static/css/main.486e0d40.chunk.css"
+    "revision": "3afcdb1d1d688fca3a91",
+    "url": "/static/css/main.3e1aff39.chunk.css"
   },
   {
     "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
@@ -20,16 +20,16 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "4b2e8d7445269a0b5c17ebb99a96c2d6",
-    "url": "/static/media/resume.4b2e8d74.docx"
+    "revision": "fed13a1e6207bfc03b2ef3b0966a5368",
+    "url": "/static/media/resume.fed13a1e.docx"
   },
   {
     "revision": "5faa0c05f9464d23657ced77105117a1",
     "url": "/static/media/Gidole-Regular.5faa0c05.otf"
   },
   {
-    "revision": "85ea67e6cb6a206e0516",
-    "url": "/static/js/main.85ea67e6.chunk.js"
+    "revision": "3afcdb1d1d688fca3a91",
+    "url": "/static/js/main.3afcdb1d.chunk.js"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.25bbebaa.chunk.css"
   },
   {
-    "revision": "ad31b772f3afe8d15f4847409c8e78bd",
+    "revision": "97d0a0812504bedf97c2552c42370584",
     "url": "/index.html"
   }
 ];

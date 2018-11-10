@@ -9,8 +9,8 @@ import AccordionCustom from "./components/AccordionCustom.js";
 import resumeFile from './static/resume.docx';
 
 let bioPass = "Hello there, my name is Filip Saulean. I can unequivocally say that I am focused and dedicated to seeing my goals brought to fruition. In addition, I can assure you that I am a fast learner so if you need me to learn a new library or language, I will do so in an expedient manner. My personal site was built with React and node.js. PS: I am also fascinated with antiquity, Roman culture, and Hellenism.";
-let languages = ["Python", "https://github.com/f-s-plus-plus/power-set", "Java", "https://github.com/f-s-plus-plus/immigration-forms-auto-filler","JavaScript", "","C#", "https://github.com/f-s-plus-plus/unity-game"];
-let additional = ["Django", "https://github.com/f-s-plus-plus/django-project", "Node.js" , "","React" , "https://github.com/f-s-plus-plus/accordion-react","jQuery" , ""];
+let languages = ["Python", "https://github.com/f-s-plus-plus/power-set", "Java", "https://github.com/f-s-plus-plus/immigration-forms-auto-filler","JavaScript", "https://github.com/f-s-plus-plus/web-scrapper","C#", "https://github.com/f-s-plus-plus/unity-game"];
+let additional = ["Django", "https://github.com/f-s-plus-plus/django-project", "Node.js" , "https://github.com/f-s-plus-plus/web-scrapper", "React" , "https://github.com/f-s-plus-plus/accordion-react","jQuery" , ""];
 let contactInformation = ["fsaulean@gmail.com", "", "fsaulean@uvm.edu", "", "808-315-5313",""];
 let database = ["MySQL", "", "SQLite3", "","MongoDB",""];
 
@@ -41,7 +41,6 @@ class App extends Component {
           </div>
           <br />
           <br />
-
         <div className="bottom-bar">
         <div className="p1"> Filip Saulean </div>
         <div className="vertical-bar"/>
