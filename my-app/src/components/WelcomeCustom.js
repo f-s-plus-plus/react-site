@@ -1,5 +1,6 @@
 import React from 'react';
 
+/* the main container that appears when the site loads*/
 class WelcomeCustom extends React.Component {
 
   render() {

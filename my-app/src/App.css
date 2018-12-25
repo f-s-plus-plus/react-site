@@ -12,6 +12,21 @@ p {
   padding: 1rem
 }
 
+.empty-anchor-custom {
+  text-decoration: none;
+  color: #272b2e;
+  transition: color .2s ease-in;
+  background-color: transparent;
+  border: none;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom : 3rem;
+}
+
 .p1 {
   margin: 0;
   padding: 0 .5rem;
@@ -210,6 +225,7 @@ App {
   flex-wrap: wrap;
   width: 100%;
   padding: 0 4vw;
+  margin-bottom: 2rem;
 }
 
 .center {

@@ -10,6 +10,7 @@ import {
 } from 'reactstrap';
 import "font-awesome/css/font-awesome.min.css";
 
+//the custon navbar that loads on the top
 class NavbarCustom extends React.Component {
   constructor(props) {
     super(props)
@@ -18,6 +19,7 @@ class NavbarCustom extends React.Component {
     }
   }
 
+  //for opening and closing the navbar accordion
   toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen,

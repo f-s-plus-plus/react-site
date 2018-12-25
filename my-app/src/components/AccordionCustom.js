@@ -16,6 +16,7 @@ class AccordionCustom extends React.Component {
     this.setState({isOpen: false, accordionStatus: "accordion-close"})
    }
 
+  //for toggling the accordion
   toggle = () => {
     if(!this.state.isOpen) {
       this.setState({
@@ -31,18 +32,25 @@ class AccordionCustom extends React.Component {
       });
     }
   }
-    createAccordionContent = () => {
-      let accordionContent = []
-      for (let i = 0; i < this.props.description.length; i += 2) {
-        var j = i + 1;
-        accordionContent.push(
-          <div className={this.state.isOpen ? 'accordion-open' : 'accordion-close'} ref={this.accordion}>
-            <a className="anchors-custom" href={this.props.description[j]}>
-              {this.props.description[i]}
-            </a>
-          </div>
-        )
+
+  //populates the accordion using the passed object description
+  createAccordionContent = () => {
+    let description = this.props.description;
+    let accordionContent = [];
+    Object.keys(description).forEach(key => {
+      let anchor;
+      if(description[key].link === "") {
+        anchor = <button className="empty-anchor-custom"> {description[key].name} </button>;
       }
+      else {
+        anchor = <a className="anchors-custom" href={description[key].link}> {description[key].name} </a>
+      }
+      accordionContent.push(
+        <div className={this.state.isOpen ? 'accordion-open' : 'accordion-close'} ref={this.accordion}>
+          {anchor}
+        </div>
+      )
+    });
     return accordionContent;
   };
 

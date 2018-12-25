@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/profile-pic.9d143525.png"
   },
   {
-    "revision": "3afcdb1d1d688fca3a91",
-    "url": "/static/css/main.3e1aff39.chunk.css"
+    "revision": "6fc21ef53ef820279d46",
+    "url": "/static/css/main.8e01719b.chunk.css"
   },
   {
     "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
@@ -20,24 +20,24 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "fed13a1e6207bfc03b2ef3b0966a5368",
-    "url": "/static/media/resume.fed13a1e.docx"
+    "revision": "ecba53d7a86c07bcfd6297a3ee20b9be",
+    "url": "/static/media/resume.ecba53d7.pdf"
   },
   {
     "revision": "5faa0c05f9464d23657ced77105117a1",
     "url": "/static/media/Gidole-Regular.5faa0c05.otf"
   },
   {
-    "revision": "3afcdb1d1d688fca3a91",
-    "url": "/static/js/main.3afcdb1d.chunk.js"
-  },
-  {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "/static/media/fontawesome-webfont.674f50d2.eot"
+    "revision": "6fc21ef53ef820279d46",
+    "url": "/static/js/main.6fc21ef5.chunk.js"
   },
   {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "/static/media/fontawesome-webfont.af7ae505.woff2"
+  },
+  {
+    "revision": "674f50d287a8c48dc19ba404d20fe713",
+    "url": "/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.25bbebaa.chunk.css"
   },
   {
-    "revision": "97d0a0812504bedf97c2552c42370584",
+    "revision": "39ec72f63fd4fa086413362a28b5abb0",
     "url": "/index.html"
   }
 ];
