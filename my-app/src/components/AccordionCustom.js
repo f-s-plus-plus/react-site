@@ -23,7 +23,6 @@ class AccordionCustom extends React.Component {
         isOpen: true,
         accordionStatus: "accordion-open"
       });
-
     }
     else {
       this.setState({

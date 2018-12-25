@@ -47,6 +47,11 @@ class NavbarCustom extends React.Component {
                   GitHub
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="https://mithridatium.io:81/home" className="notepad nav-link">
+                  Notepad
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

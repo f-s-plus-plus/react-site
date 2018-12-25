@@ -3,6 +3,10 @@
   font-size: 102%;
 }
 
+*:focus {
+    outline: 0 !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -307,6 +311,13 @@ App {
   display: inline;
   padding-right: 12px;
   content: "\f092";
+  font-family: FontAwesome;
+}
+
+.notepad::before {
+  display: inline;
+  padding-right: 12px;
+  content: "\f07b";
   font-family: FontAwesome;
 }
 
