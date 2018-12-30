@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.466c55d3.chunk.css",
-  "main.js": "/static/js/main.636de628.chunk.js",
-  "main.js.map": "/static/js/main.636de628.chunk.js.map",
+  "main.css": "/static/css/main.af6aea87.chunk.css",
+  "main.js": "/static/js/main.12c8f651.chunk.js",
+  "main.js.map": "/static/js/main.12c8f651.chunk.js.map",
   "static/css/1.25bbebaa.chunk.css": "/static/css/1.25bbebaa.chunk.css",
   "static/js/1.2b36ef70.chunk.js": "/static/js/1.2b36ef70.chunk.js",
   "static/js/1.2b36ef70.chunk.js.map": "/static/js/1.2b36ef70.chunk.js.map",
@@ -11,8 +11,8 @@
   "static/media/App.css": "/static/media/Gidole-Regular.5faa0c05.otf",
   "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.acf3dcb7.svg",
   "static/css/1.25bbebaa.chunk.css.map": "/static/css/1.25bbebaa.chunk.css.map",
-  "static/css/main.466c55d3.chunk.css.map": "/static/css/main.466c55d3.chunk.css.map",
+  "static/css/main.af6aea87.chunk.css.map": "/static/css/main.af6aea87.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.9910683873501f6a41c0eca236259474.js": "/precache-manifest.9910683873501f6a41c0eca236259474.js",
+  "precache-manifest.05b63b3b1e42707fd4390ddbbed1f6c8.js": "/precache-manifest.05b63b3b1e42707fd4390ddbbed1f6c8.js",
   "service-worker.js": "/service-worker.js"
 }

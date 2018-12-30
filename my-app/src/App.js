@@ -22,7 +22,7 @@ let additional = { django : { name : "Django", link : "https://github.com/f-s-pl
                   react : { name : "React", link : "https://github.com/f-s-plus-plus/accordion-react"},
                   jquery : { name : "jQuery", link : "https://github.com/f-s-plus-plus/cs-fair"}};
 let contactInformation = { personal : { name : "fsaulean@gmail.com", link : ""},
-                          school : { name : "fsaulean@uvm.edu", link : ""},
+                          school : { name : "filip.saulean@uvm.edu", link : ""},
                           phone : { name : "808-315-5313", link : ""}};
 let database = { mysql : {name : "MySQL", link : "https://github.com/f-s-plus-plus/photography-website"},
                 sqlite3 : {name : "SQLite3", link : ""},
