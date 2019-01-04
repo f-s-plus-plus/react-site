@@ -23,9 +23,9 @@ let additional = { django : { name : "Django", link : "https://github.com/f-s-pl
                   node : { name : "Node.js", link : "https://github.com/f-s-plus-plus/web-scrapper"},
                   react : { name : "React", link : "https://github.com/f-s-plus-plus/accordion-react"},
                   jquery : { name : "jQuery", link : "https://github.com/f-s-plus-plus/cs-fair"}};
-let contactInformation = { personal : { name : "fsaulean@gmail.com", link : ""},
-                          school : { name : "filip.saulean@uvm.edu", link : ""},
-                          phone : { name : "808-315-5313", link : ""}};
+let contactInformation = { personal : { name : "fsaulean@gmail.com"},
+                          school : { name : "filip.saulean@uvm.edu"},
+                          phone : { name : "808-315-5313"}};
 let database = { mysql : {name : "MySQL", link : "https://github.com/f-s-plus-plus/photography-website"},
                 sqlite3 : {name : "SQLite3", link : ""},
                 mongo : {name : "MongoDB", link : "https://github.com/f-s-plus-plus/cs-fair"}};
