@@ -8,13 +8,13 @@ const app = express();
 
 //initializes express
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, '/../client/build')));
+app.use(express.static(path.join(__dirname, './client/build')));
 
 
 
 //gets the home page file (uses production build of the front end react app)
 app.get('*', (req,res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+    res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
 //port
