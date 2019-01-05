@@ -48,7 +48,7 @@ class TopNavbar extends React.Component {
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="http://mithridatium.io:81/home" className="notepad nav-link">
+                                <NavLink href="https://mithridatium.io/home" className="notepad nav-link">
                                     Notepad
                                 </NavLink>
                             </NavItem>
