@@ -1,5 +1,5 @@
 * {
-    font-family: Gidole;
+    font-family: 'Raleway', Arial, sans-serif;
     font-size: 102%;
 }
 
@@ -11,25 +11,24 @@ html {
     scroll-behavior: smooth;
 }
 
-p {
-    margin: 0;
-    padding: 1rem
-}
-
 .empty-anchor-custom {
     text-decoration: none;
-    color: #272b2e;
+    color: #333;
     background-color: transparent;
     border: none;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
 }
 
+.blue {
+    background-color: blue !important;
+}
+
 .profile-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom : 3rem;
+    margin-bottom: 2rem;
 }
 
 .p1 {
@@ -46,54 +45,12 @@ p {
 
 body {
     width: 100%;
-    background-color: #fff !important;
-    background-attachment: fixed;
     overflow-x: hidden;
+    background-size: cover;
 }
 
-App {
-    position: absolute;
-}
-
-.navbar-custom {
-    position: fixed !important;
-    background-color: #fff !important;
-    z-index: 4;
-    width: 96%;
-    padding: .7rem 0 !important;
-    border-bottom: 2px solid #272b2e;
-    margin: 0 2%;
-    animation: loading-bar .2s linear;
-}
-
-.navbar-custom-container {
-    margin-top: 1%;
-    padding: 0 1rem !important;
-}
-
-.navbar-toggler {
-    border-color: transparent !important;
-}
-
-.navbar-toggler:focus {
-    outline: 0;
-}
-
-.navbar-toggler > span {
-    padding: 0 !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100%;
-    color: #272b2e !important;
-}
-
-.navbar-toggler > span::before {
-    padding: 0 !important;
-    margin: 0 !important;
-    font-family: FontAwesome;
-    content: "\f0c9";
-    color: #272b2e;
+li {
+    display: inline-block;
 }
 
 .padding-right {
@@ -121,13 +78,13 @@ App {
 
 .anchors-custom {
     text-decoration: none;
-    color: #272b2e;
-    transition: all .3s ease-in;
-    -webkit-transition: all .3s ease-in;
+    color: #333;
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
 }
 
 .anchors-custom:hover {
-    color: #d76179;
+    color: #00ada7;
     text-decoration: none;
 }
 
@@ -136,13 +93,19 @@ App {
 }
 
 .welcome-box {
-    height: 90vh;
+    height: 100vh;
     display: flex;
+    margin: auto;
+    background: url("static/background.png") repeat fixed center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    width: 100vw;
+    filter: grayscale(40%) sepia(50%);
+    animation: ocean-animations .2s ease-in-out infinite;
 }
+
+
 
 .size-big {
     font-size: 160%;
@@ -179,23 +142,20 @@ App {
 }
 
 .profile-text {
+    display: inline !important;
     text-align: center;
-}
-
-.profile-text::before {
-    content: "\f10d";
-    font-family: FontAwesome;
-    padding-right: 3px;
-}
-
-.profile-text::after {
-    content: "\f10e";
-    font-family: FontAwesome;
-    padding-left: 3px;
+    margin: 0 3rem;
 }
 
 .brand-custom {
-    color: #272b2e !important;
+    color: #656565 !important;
+}
+
+.accordion-container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .accordion-open {
@@ -214,26 +174,25 @@ App {
     -webkit-transition: all .3s ease-in;
 }
 
-.nav-link {
-    font-size: 90% !important;
-    color: #272b2e !important;
-    transition: all .3s ease-in;
-    -webkit-transition: all .3s ease-in;
-}
-
-.nav-link:hover {
-    color: #d76179 !important;
-}
-
-.container {
+.container-main {
     display: flex;
-    justify-content: center;
-    align-self: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 3rem;
+}
+
+.fas {
+    display: inline-block !important;
+}
+
+.profile-p {
+    display: inline-block !important;
+}
+
+.App {
     width: 100%;
-    padding: 0 4vw;
-    margin-bottom: 2rem;
+    padding: 0 !important;
 }
 
 .center {
@@ -247,8 +206,6 @@ App {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10%;
-    width: 80%;
     animation: loading-bar 4s linear;
 }
 
@@ -302,7 +259,7 @@ App {
 
 .resume::before {
     display: inline;
-    padding-right: 12px;
+    padding-right: .35rem;
     content: "\f15c";
     font-family: FontAwesome;
     border-radius: 8px;
@@ -310,14 +267,14 @@ App {
 
 .github::before {
     display: inline;
-    padding-right: 12px;
+    padding-right: .35rem;
     content: "\f092";
     font-family: FontAwesome;
 }
 
 .notepad::before {
     display: inline;
-    padding-right: 12px;
+    padding-right: .35rem;
     content: "\f07b";
     font-family: FontAwesome;
 }
@@ -326,10 +283,16 @@ App {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0% 2%;
+    margin: 0 2%;
+    width: 16rem;
     color: black;
     max-width: 80%;
     text-align: center;
+}
+
+.caret-down::after {
+    font-family: FontAwesome;
+    content: '\f0d7';
 }
 
 .post-head {
@@ -337,11 +300,12 @@ App {
     padding: 1rem;
     width: 100%;
     color: white;
-    background-color: #272b2e;
+    background-color: rgba(30, 30, 30, .6);
     border: none;
     margin-bottom: 1rem;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
+    border-radius: 3px;
 }
 
 .post-head:focus {
@@ -350,8 +314,8 @@ App {
 
 .post-head:hover {
     cursor: pointer;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,.3);
-    background-color: #d76179;
+    background-color: rgba(30, 30, 30, .4);
+    transform: scale(1.1);
 }
 
 .profile-pic {
@@ -375,17 +339,36 @@ App {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #272b2e;
+    background-color: #404040;
     height: 6rem;
     color: #fff;
 }
 
-.nav-item {
-    width: 2rem;
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    align-items: center;
+}
+
+.nav-link {
+    color: #202020;
+    text-decoration: none;
+    margin: .3rem !important;
+    padding: .3rem 1rem;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.nav-link:hover {
+    color: #97dfce;
+    background-color: rgba(30, 30, 30, .4);
 }
 
 .modal-custom {
-    font-family: Gidole;
+    font-family: Raleway, Arial, sans-serif;
 }
 
 .hr-custom {
@@ -398,14 +381,15 @@ App {
     padding: 1rem 2rem;
     margin: 1rem;
     background-color: transparent;
-    border: 2px solid #272b2e;
-    color: #272b2e;
+    border: 2px solid #656565;
+    color: #656565;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
 }
 
+
 .download-anchor:hover {
-    background-color: #272b2e;
+    background-color: #656565;
     color: #fff;
     text-decoration: none;
 }
@@ -424,5 +408,23 @@ App {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes ocean-animations {
+    0% {
+        background-position: left;
+    }
+    25% {
+        background-position: center;
+    }
+    50% {
+        background-position: right;
+    }
+    75% {
+        background-position: center;
+    }
+    100% {
+        background-position: left;
     }
 }

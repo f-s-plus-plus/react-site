@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import TopNavbar from "./components/TopNavbar";
+import Navbar from "./components/Navbar.js";
 import Profile from "./components/Profile.js";
 import Welcome from "./components/Welcome.js";
 import Accordion from "./components/Accordion.js";
@@ -36,24 +35,21 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossOrigin="anonymous"  />
-                <TopNavbar />
-                <div className="container">
-                    <Welcome />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+                <Navbar />
+                <Welcome />
+                <div className="container-main">
                     <a id="resume-container" className="anchor-custom">
                         <Profile bio={bioPass}/>
                     </a>
-                    <Accordion title="Languages" description={languages} />
-                    <Accordion title="Frameworks/Libraries" description={additional} />
-                    <Accordion title="Database Experiences" description={database} />
-                    <Accordion title="Contact Information" description={contactInformation} />
+                    <div className='accordion-container'>
+                        <Accordion title="Languages" description={languages} />
+                        <Accordion title="Frameworks/Libraries" description={additional} />
+                        <Accordion title="Database Experiences" description={database} />
+                        <Accordion title="Contact Information" description={contactInformation} />
+                    </div>
                 </div>
-                <div className="container">
-                    <a href={resumeFile} download className="download-anchor">
-                        Download Resume
-                    </a>
-                </div>
-                <Footer />
+                <Footer/>
             </div>
         );
     }

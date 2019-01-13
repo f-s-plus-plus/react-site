@@ -15,8 +15,8 @@ class Welcome extends React.Component {
                 <i className="fas fa-long-arrow-alt-down size-big"/>
                 </div>
             </div>
-    );
-  }
+        );
+    }
 }
 
 export default Welcome;

@@ -66,14 +66,12 @@ class Accordion extends React.Component {
     render() {
         return (
             <div className="post">
-                <div>
-                    <button className="post-head" onClick={this.toggle}>
-                        {this.props.title}
-                        <i className="fas fa-caret-down padding-left" />
-                    </button>
-                    {this.createAccordionContent()}
-                    <div className={this.state.isOpen ? 'div-fill' : 'div-no-fill'}>
-                    </div>
+                <button className="post-head" onClick={this.toggle}>
+                    {this.props.title}
+                    <span className='caret-down'> </span>
+                </button>
+                {this.createAccordionContent()}
+                <div className={this.state.isOpen ? 'div-fill' : 'div-no-fill'}>
                 </div>
             </div>
         );

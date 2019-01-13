@@ -12,12 +12,13 @@ class Profile extends React.Component {
         return(
         <div className="profile-box">
             <div className="profile-pic" onClick={this.sendLink} />
-            <p style={{textAlign: 'center', borderBottom: "4px solid #d76179"}}>
+            <p style={{textAlign: 'center', borderBottom: "4px solid #00ada7", paddingBottom : "12px"}}>
                 Who Am I?
             </p>
             <p className="profile-text">
                 {this.props.bio}
             </p>
+            <br />
       </div>
     );
   }
