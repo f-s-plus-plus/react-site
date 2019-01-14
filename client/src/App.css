@@ -167,8 +167,12 @@ li {
 }
 
 .react-brand::before {
-    content: '\f136';
+    content: '\f41b';
     font-family: FontAwesome;
+}
+
+.fab {
+    margin-right: .35rem;
 }
 
 .profile-text {

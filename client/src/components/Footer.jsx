@@ -8,7 +8,7 @@ class Footer extends Component {
                 <div className="p1"> Filip Saulean </div>
                 <div className="vertical-bar"/>
                 <a href="https://reactjs.org/" className="react-link">
-                    <span className="react-brand"> </span>
+                    <i className="fab fa-react"></i>
                     Powered by React
                 </a>
             </div>
