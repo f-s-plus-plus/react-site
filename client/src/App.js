@@ -51,6 +51,10 @@ class App extends Component {
                         <Accordion title="Database Experiences" description={database} />
                         <Accordion title="Contact Information" description={contactInformation} />
                     </div>
+                    <br />
+                    <a href={resumeFile} className='download-anchor' download>
+                        Download
+                    </a>
                 </div>
                 <Footer/>
             </div>

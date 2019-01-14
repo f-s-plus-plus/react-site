@@ -18,7 +18,6 @@ class Welcome extends Component {
                         </div>
                     </a>
                 </div>
-
             </div>
         );
     }

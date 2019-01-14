@@ -89,13 +89,15 @@ li {
 }
 
 .button-active {
+    display: flex;
+    justify-content: center;
     background-color: blue;
 }
 
 .welcome-box {
     height: 100vh;
     display: flex;
-    margin: auto;
+    margin: 0;
     background: url("static/background.png") repeat fixed center;
     flex-direction: column;
     justify-content: center;
@@ -105,7 +107,11 @@ li {
     animation: ocean-animations .2s ease-in-out infinite;
 }
 
-
+.fas {
+    margin: auto !important;
+    text-align: center;
+    padding: 0 !important;
+}
 
 .size-big {
     font-size: 160%;
@@ -378,12 +384,49 @@ li {
     color: #fff;
 }
 
+.navbar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    flex-direction: column;
+}
+
+.navbar-open {
+    height: 3rem !important;
+}
+
+.navbar-close {
+    height: 0 !important;
+}
+
+.open-navbar-btn {
+    margin-top: .35rem;
+    width: 10rem;
+    background-color: transparent;
+    border: none;
+    transition: all .2s ease-in;
+}
+
+.open-navbar-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .navbar {
     display: flex;
-    position: fixed;
-    width: 100%;
+    width: 30rem;
+    overflow: hidden;
+    transition: all .2s ease-in;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 50;
+    border-radius: 0 0 4px 4px;
+    justify-content: center;
     align-items: center;
+    background-color: rgba(0,0,0,.2);
 }
 
 .nav-link {
@@ -397,7 +440,7 @@ li {
 }
 
 .nav-link:hover {
-    color: #97dfce;
+    color: #fff;
     background-color: rgba(30, 30, 30, .4);
 }
 
@@ -412,6 +455,8 @@ li {
 }
 
 .download-anchor {
+    text-decoration: none;
+    border-radius: 3px;
     padding: 1rem 2rem;
     margin: 1rem;
     background-color: transparent;
