@@ -1,5 +1,5 @@
 * {
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 102%;
 }
 
@@ -113,14 +113,42 @@ li {
 }
 
 .font-box {
-    height: 10vh;
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 1rem;
+    text-decoration: none;
+    color: #202020;
     justify-content: center;
     align-items: center;
 }
 
+.font-box p, .font-box div {
+    transition: all .2s ease-in;
+}
+
+.font-box:hover p, .font-box:hover div {
+    transform: scale(1.1);
+}
+
+.scroll-down {
+    text-decoration: none;
+    color: #202020;
+    margin-bottom: .6rem;
+}
+
+
+.chevron-down::after {
+    content: '\f078';
+    display: flex;
+    width: 100%;
+    margin-top: -.8rem;
+    font-family: FontAwesome;
+}
+
 .header-1 {
     font-size: 300%;
+    font-weight: 400;
     white-space: nowrap;
     animation: loading-bar 2s ease-in;
 }
@@ -135,10 +163,12 @@ li {
 }
 
 .react-brand {
-    margin-right: 0;
-    color: #fff;
-    border-radius: 2px;
-    padding: 1px;
+    margin-right: .35rem;
+}
+
+.react-brand::before {
+    content: '\f136';
+    font-family: FontAwesome;
 }
 
 .profile-text {

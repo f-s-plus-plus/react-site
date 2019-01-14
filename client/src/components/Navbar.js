@@ -14,7 +14,6 @@ class Navbar extends Component {
               <a href="https://github.com/f-s-plus-plus" className="nav-link github">
                   Github
               </a>
-
               <a href="https://mithridatium.io" className="nav-link notepad">
                   Notepad App
               </a>

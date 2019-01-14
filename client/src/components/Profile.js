@@ -10,7 +10,7 @@ class Profile extends React.Component {
 
     render() {
         return(
-        <div className="profile-box">
+        <div id='resume' className="profile-box">
             <div className="profile-pic" onClick={this.sendLink} />
             <p style={{textAlign: 'center', borderBottom: "4px solid #00ada7", paddingBottom : "12px"}}>
                 Who Am I?
