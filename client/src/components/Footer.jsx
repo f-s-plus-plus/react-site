@@ -6,7 +6,7 @@ class Footer extends Component {
         return(
             <div className="bottom-bar">
                 <a href="https://reactjs.org/" className="react-link">
-                    <i className="fab fa-react"></i>
+                    <i className="fab fa-react" />
                     Powered by React
                 </a>
             </div>

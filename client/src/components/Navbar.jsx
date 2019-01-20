@@ -37,8 +37,9 @@ class Navbar extends Component {
                         Github
                     </a>
                     <a href="https://mithridatium.io" className="nav-link notepad">
-                        Notepad App
+                        Notepad
                     </a>
+                    <hr />
                 </div>
                 <button onClick={this.toggle} className="active-btn open-navbar-btn">
                 </button>

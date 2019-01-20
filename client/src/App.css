@@ -78,20 +78,24 @@ body {
     margin: 0;
     background: transparent;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
 
 .scroll-down-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    opacity: 0;
     transition: all .2s ease-in;
+    animation: loading-bar 2s ease-in 1s;
+    animation-fill-mode: forwards;
+}
+
+.scroll-down-link:hover {
+    transform: translateY(.2rem);
 }
 
 a {
+    color: #909090;
     text-decoration: none !important;
 }
 
@@ -106,6 +110,8 @@ a {
 }
 
 .open-navbar-btn::after {
+    font-size: 1.3rem;
+    margin-top: .2rem;
     content: '\f142';
     display: flex;
     font-family: FontAwesome;
@@ -114,9 +120,9 @@ a {
 .active-btn {
     margin-bottom: 3.4rem;
     color: #909090;
-    height: 2rem;
+    height: 3rem;
     border-width: 3px;
-    width: 2rem;
+    width: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,27 +131,12 @@ a {
     transition: all .2s ease-in;
 }
 
-.chevron-down {
-    margin-bottom: 3.4rem;
-}
-
-.chevron-down:hover {
-    cursor: pointer;
-}
-
-.chevron-down::after {
-    content: '\f078';
-    display: flex;
-    font-family: FontAwesome;
-}
-
 .header-1 {
     font-size: 300%;
     padding: 0 2rem;
     font-weight: 200;
     white-space: nowrap;
     color: #909090;
-    height: 30rem;
     animation: loading-bar 2s ease-in;
 }
 
@@ -325,6 +316,7 @@ a {
 }
 
 .profile-pic:hover {
+    transform: scale(1.05);
     filter: contrast(150%);
     cursor: pointer;
 }
@@ -339,7 +331,7 @@ a {
 
 .navbar-container {
     display: flex;
-    background-color: white;
+    background-color: transparent;
     align-items: center;
     position: fixed;
     z-index: 100;
@@ -347,9 +339,17 @@ a {
     flex-direction: column;
 }
 
+hr {
+    background-color: #d1d1d1;
+    height: 2px;
+    width: 90%;
+    margin: auto 5% 0 5%;
+    padding: 0 !important;
+    border: none;
+}
+
 .navbar-open {
-    border-bottom: 2px solid #d1d1d1;
-    height: 6rem !important;
+    height: 4.5rem !important;
 }
 
 .navbar-close {
@@ -359,15 +359,15 @@ a {
 .navbar {
     display: flex;
     overflow: hidden;
+    background-color: white;
     transition: all .2s ease-in;
     height: 0;
-    width: 90%;
+    width: 100%;
     flex-wrap: wrap;
     margin: 0 5%;
     z-index: 50;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
 }
 
 .nav-border-bottom {
@@ -379,6 +379,7 @@ a {
 }
 
 .nav-link {
+    margin-top: 1rem;
     color: #a0bcc1;
     text-decoration: none;
     padding: .3rem 1rem;
@@ -388,10 +389,6 @@ a {
 
 .nav-link:hover {
     color: #00a78d;
-}
-
-.modal-custom {
-    font-family: Raleway, Arial, sans-serif;
 }
 
 .download-anchor {

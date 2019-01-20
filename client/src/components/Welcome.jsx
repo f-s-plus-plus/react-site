@@ -9,9 +9,7 @@ class Welcome extends Component {
                 <h1 className='header-1'>
                     Hello There!
                 </h1>
-                <a className='scroll-down-link' href="#resume">
-                    <button className="active-btn chevron-down"/>
-                </a>
+                <a className='scroll-down-link' href='#resume'> You can scroll down! </a>
             </div>
         );
     }
