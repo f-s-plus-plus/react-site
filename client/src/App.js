@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from "./components/Navbar.js";
-import Profile from "./components/Profile.js";
-import Welcome from "./components/Welcome.js";
-import Accordion from "./components/Accordion.js";
+import Navbar from "./components/Navbar.jsx";
+import Profile from "./components/Profile.jsx";
+import Welcome from "./components/Welcome.jsx";
+import Accordion from "./components/Accordion.jsx";
 import Footer from './components/Footer';
 
 //resume file
@@ -26,7 +26,7 @@ let contactInformation = { personal : { name : "fsaulean@gmail.com"},
                           school : { name : "filip.saulean@uvm.edu"},
                           phone : { name : "808-315-5313"}};
 let database = { mysql : {name : "MySQL", link : "https://github.com/f-s-plus-plus/photography-website"},
-                sqlite3 : {name : "SQLite3", link : ""},
+                sqlite3 : {name : "SQLite3"},
                 mongo : {name : "MongoDB", link : "https://github.com/f-s-plus-plus/cs-fair"}};
 
 //main App

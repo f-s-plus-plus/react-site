@@ -44,11 +44,11 @@ class Accordion extends React.Component {
         Object.keys(description).forEach(key => {
             //checks to see if the anchor is going to a link or empty button
             let anchor;
-            if(description[key].link === "") {
+            if(description[key].link == null) {
                 anchor = <button className="empty-anchor-custom"> {description[key].name} </button>;
             }
             else {
-                anchor = <a className="anchors-custom" href={description[key].link}> {description[key].name} </a>
+                anchor = <a className="anchor-custom" href={description[key].link}> {description[key].name} </a>
             }
 
             //pushes it to that initially empty
