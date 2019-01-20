@@ -53,7 +53,7 @@ class App extends Component {
                     </div>
                     <br />
                     <a href={resumeFile} className='download-anchor' download>
-                        Download
+                        Download Resume PDF
                     </a>
                 </div>
                 <Footer/>

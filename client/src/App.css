@@ -115,6 +115,7 @@ a {
     margin-bottom: 3.4rem;
     color: #909090;
     height: 2rem;
+    border-width: 3px;
     width: 2rem;
     display: flex;
     justify-content: center;
@@ -377,24 +378,6 @@ a {
     height: 1rem
 }
 
-.black-caret {
-    border-top: 1rem solid #1a1a1a;
-    border-left: 1rem solid transparent;
-    border-right: 1rem solid transparent;
-    width: 0 !important;
-    height: 100%;
-    border-bottom: 1rem solid #1a1a1a;
-}
-
-hr {
-    width: 90%;
-    margin: 0 5% !important;
-    height: 2px;
-    padding: 0 !important;
-    border: none;
-    background-color: #d1d1d1;
-}
-
 .nav-link {
     color: #a0bcc1;
     text-decoration: none;
@@ -422,7 +405,6 @@ hr {
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
 }
-
 
 .download-anchor:hover {
     background-color: #1a1a1a;
