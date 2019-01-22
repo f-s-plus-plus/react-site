@@ -66,7 +66,7 @@ class App extends Component {
                 </div>
                 <div className="container-main flex-container padding" id='projects'>
                     <p className="underline-text width-100"> Projects </p>
-                    <p className="width-100-true" style={{marginBottom: "3rem"}}> Here is a quick overview of the projects that I have worked: </p>
+                    <p className="width-100-true" style={{marginBottom: "3rem"}}> Here is a quick overview of the projects that I have worked on: </p>
                     <Project description={notepadDescription} language='fab fa-js-square' demonstrationLink="https://mithridatium.io" projectName="Notepad Application" link="https://github.com/f-s-plus-plus/notepad"/>
                     <Project description={immigrationDescription} language='fab fa-java' projectName="Immigrations Form Auto-Filler" link="https://github.com/f-s-plus-plus/immigration-forms-auto-filler"/>
                     <Project description={photographyDescription} language='fab fa-php' projectName="Photography Site" link="https://github.com/f-s-plus-plus/photography-website"/>
