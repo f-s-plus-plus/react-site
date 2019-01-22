@@ -5,6 +5,7 @@ import Profile from "./components/Profile.jsx";
 import Welcome from "./components/Welcome.jsx";
 import Accordion from "./components/Accordion.jsx";
 import Footer from './components/Footer';
+import Project from './components/Project';
 
 //resume file
 import resumeFile from './static/resume.pdf';
@@ -41,8 +42,8 @@ class App extends Component {
                       crossOrigin="anonymous" />
                 <Navbar />
                 <Welcome />
-                <div className="container-main">
-                    <a id="resume-container" className="anchor-custom">
+                <div className="container-main" id="resume-container">
+                    <a className="anchor-custom">
                         <Profile bio={bioPass}/>
                     </a>
                     <div className='accordion-container'>
@@ -55,6 +56,15 @@ class App extends Component {
                     <a href={resumeFile} className='download-anchor' download>
                         Download Resume PDF
                     </a>
+                    <br />
+                </div>
+                <div className="container-main flex-container padding" id='projects'>
+                    <p className="underline-text width-100"> Projects </p>
+                    <p className="width-100-true"> Here is the section containing my projects that I have worked on </p>
+                    <Project language='fab fa-js-square' demonstrationLink="https://mithridatium.io" projectName="Notepad Application" link="https://github.com/f-s-plus-plus/notepad"/>
+                    <Project language='fab fa-java' projectName="Immigrations Form Auto-Filler" link="https://github.com/f-s-plus-plus/immigration-forms-auto-filler"/>
+                    <Project language='fab fa-php' projectName="Photography Site" link="https://github.com/f-s-plus-plus/photography-website"/>
+                    <Project language='fab fa-java' projectName="Boggle" link="https://github.com/f-s-plus-plus/boggle"/>
                 </div>
                 <Footer/>
             </div>

@@ -4,7 +4,7 @@ class Footer extends Component {
 
     render() {
         return(
-            <div className="bottom-bar">
+            <div className="footer">
                 <a href="https://reactjs.org/" className="react-link">
                     <i className="fab fa-react" />
                     Powered by React

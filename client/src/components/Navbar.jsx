@@ -30,14 +30,14 @@ class Navbar extends Component {
         return(
             <div className='navbar-container'>
                 <div className={this.state.isOpen ? 'navbar navbar-close' : 'navbar navbar-open'}>
-                    <a href="#resume" className="nav-link resume">
-                        Resume
-                    </a>
                     <a href="https://github.com/f-s-plus-plus" className="nav-link github">
                         Github
                     </a>
-                    <a href="https://mithridatium.io" className="nav-link notepad">
-                        Notepad
+                    <a href="#resume" className="nav-link resume">
+                        Resume
+                    </a>
+                    <a href="#projects" className="nav-link notepad">
+                        Projects
                     </a>
                     <hr />
                 </div>
