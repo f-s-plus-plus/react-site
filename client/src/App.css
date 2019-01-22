@@ -129,6 +129,7 @@ a {
     padding: 0 1rem 1rem 1rem;
     flex-direction: column;
     margin: 0 1rem 1rem 1rem;
+    width: 20rem;
     border-radius: 3px;
     background-color: #fff;
     box-shadow: 0 0 8px 0 rgba(0,0,0,.15);
@@ -137,6 +138,11 @@ a {
 
 .project-container a {
     display: inline !important;
+}
+
+#resume {
+    position: absolute;
+    top: 100%;
 }
 
 .width-100-true {
@@ -148,21 +154,9 @@ a {
     padding: 2rem 0;
 }
 
-.php::before {
-    content: '\f457';
-    font-family: FontAwesome;
+.project-container p {
+    text-align: center;
 }
-
-.java::before {
-    content: '\f4e4';
-    font-family: FontAwesome;
-}
-
-.javascript::before {
-    content: '\f3b9';
-    font-family: FontAwesome;
-}
-
 .project-container:hover {
     transform: scale(1.04);
 }
@@ -263,6 +257,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
     border-top: 1px solid #d1d1d1;
     background-color: #fff;
 }
@@ -387,6 +382,7 @@ a:hover {
     height: 10rem;
     border-radius: 50rem;
     margin-bottom: 2rem;
+    margin-top: -5.5rem;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
 }

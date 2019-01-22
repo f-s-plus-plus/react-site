@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2305edc2-35d6-40e8-a322-d03e05b70ec3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/static/resume.8b9d79db.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Project.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Project.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Welcome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Welcome.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="60" column="83" selection-start-line="60" selection-start-column="83" selection-end-line="60" selection-end-column="83" />
+            <state relative-caret-position="230">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -45,10 +42,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/Welcome.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="147" column="14" selection-start-line="147" selection-start-column="14" selection-end-line="147" selection-end-column="14" />
+            <state relative-caret-position="380">
+              <caret line="384" column="20" selection-start-line="384" selection-start-column="20" selection-end-line="384" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -56,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Navbar.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+            <state relative-caret-position="320">
+              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -65,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Profile.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -74,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Project.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+            <state relative-caret-position="460">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -91,13 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hr</find>
-      <find>hr {</find>
-      <find>nav-link</find>
-      <find>bottom-bar</find>
-      <find>navbar-container</find>
-      <find>empty</find>
-      <find>border-bottom</find>
       <find>vertical</find>
       <find>animation</find>
       <find>ocean</find>
@@ -114,13 +113,20 @@
       <find>scroll</find>
       <find>border-b</find>
       <find>bottom</find>
-      <find>container</find>
       <find>p {</find>
       <find>a</find>
       <find>flex-con</find>
       <find>p</find>
       <find>project</find>
       <find>blue</find>
+      <find>box-shad</find>
+      <find>#resume</find>
+      <find>profile</find>
+      <find>profile-box</find>
+      <find>container</find>
+      <find>resume</find>
+      <find>main</find>
+      <find>profile-pic</find>
     </findStrings>
     <replaceStrings>
       <replace>656565</replace>
@@ -150,11 +156,11 @@
         <option value="$PROJECT_DIR$/client/src/components/Profile.js" />
         <option value="$PROJECT_DIR$/client/src/components/Welcome.js" />
         <option value="$PROJECT_DIR$/client/src/components/Navbar.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Welcome.jsx" />
         <option value="$PROJECT_DIR$/client/src/components/Footer.jsx" />
         <option value="$PROJECT_DIR$/client/src/components/Project.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Navbar.jsx" />
         <option value="$PROJECT_DIR$/client/src/components/Accordion.jsx" />
+        <option value="$PROJECT_DIR$/client/src/components/Navbar.jsx" />
+        <option value="$PROJECT_DIR$/client/src/components/Welcome.jsx" />
         <option value="$PROJECT_DIR$/client/src/components/Profile.jsx" />
         <option value="$PROJECT_DIR$/client/src/components/Project.jsx" />
         <option value="$PROJECT_DIR$/client/src/App.css" />
@@ -255,12 +261,12 @@
       <workItem from="1548001659479" duration="11592000" />
       <workItem from="1548021877380" duration="1454000" />
       <workItem from="1548168204133" duration="1773000" />
-      <workItem from="1548174993051" duration="4245000" />
+      <workItem from="1548174993051" duration="6824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42476000" />
+    <option name="totallyTimeSpent" value="45055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -377,10 +383,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/TopNavbar.js" />
-    <entry file="file://$PROJECT_DIR$/client/src/components/Welcome.jsx">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Accordion.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="23">
+          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Navbar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Project.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -391,45 +411,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Accordion.jsx">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Welcome.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Profile.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="276">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="147" column="14" selection-start-line="147" selection-start-column="14" selection-end-line="147" selection-end-column="14" />
+        <state relative-caret-position="380">
+          <caret line="384" column="20" selection-start-line="384" selection-start-column="20" selection-end-line="384" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Project.jsx">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Profile.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Navbar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="60" column="83" selection-start-line="60" selection-start-column="83" selection-end-line="60" selection-end-column="83" />
+        <state relative-caret-position="230">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

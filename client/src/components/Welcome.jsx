@@ -10,6 +10,7 @@ class Welcome extends Component {
                     Hello There!
                 </h1>
                 <a className='scroll-down-link' href='#resume'> You can scroll down! </a>
+                <div id='resume'/>
             </div>
         );
     }

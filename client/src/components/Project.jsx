@@ -17,7 +17,9 @@ class Project extends Component {
                     <i className={this.props.language} />
                     {this.props.projectName}
                 </p>
-
+                <p>
+                    {this.props.description}
+                </p>
                 <div>
                     <a className='github' href={this.props.link}>
                     </a>

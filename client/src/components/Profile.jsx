@@ -10,7 +10,7 @@ class Profile extends React.Component {
 
     render() {
         return(
-        <div id='resume' className="profile-box">
+        <div className="profile-box">
             <div className="profile-pic" onClick={this.sendLink} />
             <p className='underline-text'>
                 Who Am I?
