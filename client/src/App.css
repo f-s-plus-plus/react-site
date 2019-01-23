@@ -335,6 +335,56 @@ a:hover {
     font-family: FontAwesome;
 }
 
+.linkedin::before {
+    display: inline;
+    padding-right: .35rem;
+    content: "\f08c";
+    font-family: FontAwesome;
+}
+
+.tags-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.tags-container button {
+    text-align: center;
+    padding: .5rem;
+    color: white;
+    background-color: #00a78d;
+    border: none;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    border-radius: 3px;
+    z-index: 90;
+    margin: 0 .5rem 1rem .5rem;
+}
+
+.active-tag {
+    background-color: #aaa !important;
+}
+
+.tags-container button:hover {
+    cursor: pointer;
+    background-color: #d1d1d1;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.show {
+    background-color: blue;
+    display: inline-flex;
+}
+
+.hide {
+    display: none;
+}
+
+
 .post {
     display: flex;
     align-items: center;
@@ -404,12 +454,10 @@ a:hover {
 
 .navbar-container {
     display: flex;
-    background-color: transparent;
-    align-items: center;
     position: fixed;
     z-index: 100;
-    width: 100%;
-    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
 }
 
 hr {
@@ -422,46 +470,53 @@ hr {
 }
 
 .navbar-open {
-    height: 4.5rem !important;
+    width: 20rem !important;
 }
 
 .navbar-close {
-    height: 0 !important;
+    width: 0 !important;
 }
 
 .navbar {
     display: flex;
     overflow: hidden;
-    background-color: white;
+    box-shadow: 0 3px 7px 1px rgba(0,0,0,.1);
+    background-color: #00a78d;
     transition: all .2s ease-in;
-    height: 0;
-    width: 100%;
+    height: 100vh;
+    width: 0;
+    max-width: 80vw;
     flex-wrap: wrap;
-    margin: 0 5%;
     z-index: 50;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.nav-border-bottom {
-    background-color: #00a78d;
-    display: flex;
+.navbar .nav-link:last-child {
+    border-bottom: 1px solid #909090;
+}
+
+.navbar a {
     width: 100%;
+    display: flex;
     justify-content: center;
-    height: 1rem
-}
-
-.nav-link {
-    margin-top: 1rem;
-    color: #a0bcc1;
+    align-items: center;
+    color: white;
     text-decoration: none;
-    padding: .3rem 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
     transition: all .2s ease-in-out;
-    display: inline-block;
 }
 
-.nav-link:hover {
+.navbar a:hover {
     color: #00a78d;
+    background-color: white;
+}
+
+.navbar p {
+    font-size: 1.4rem;
+    color: white;
 }
 
 .download-anchor {

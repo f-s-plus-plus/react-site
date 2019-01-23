@@ -30,16 +30,18 @@ class Navbar extends Component {
         return(
             <div className='navbar-container'>
                 <div className={this.state.isOpen ? 'navbar navbar-close' : 'navbar navbar-open'}>
-                    <a href="https://github.com/f-s-plus-plus" className="nav-link github">
+                    <a href="https://github.com/f-s-plus-plus" className="github">
                         Github
                     </a>
-                    <a href="#resume" className="nav-link resume">
+                    <a href="https://www.linkedin.com/in/filip-saulean-919624179/" className="linkedin">
+                        Linkedin
+                    </a>
+                    <a href="#resume" className="resume">
                         Resume
                     </a>
-                    <a href="#projects" className="nav-link notepad">
+                    <a href="#projects" className="notepad">
                         Projects
                     </a>
-                    <hr />
                 </div>
                 <button onClick={this.toggle} className="active-btn open-navbar-btn">
                 </button>

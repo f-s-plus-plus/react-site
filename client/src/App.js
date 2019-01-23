@@ -5,7 +5,7 @@ import Profile from "./components/Profile.jsx";
 import Welcome from "./components/Welcome.jsx";
 import Accordion from "./components/Accordion.jsx";
 import Footer from './components/Footer';
-import Project from './components/Project';
+import ProjectsContainer from './components/ProjectsContainer';
 
 //resume file
 import resumeFile from './static/resume.pdf';
@@ -29,12 +29,6 @@ let contactInformation = { personal : { name : "fsaulean@gmail.com"},
 let database = { mysql : {name : "MySQL", link : "https://github.com/f-s-plus-plus/photography-website"},
                 sqlite3 : {name : "SQLite3"},
                 mongo : {name : "MongoDB", link : "https://github.com/f-s-plus-plus/cs-fair"}};
-
-//for the descriptions of each project
-let notepadDescription = "A note taking application that has latex enabled and utilizes MongoDB and Node.js.";
-let immigrationDescription = "A JavaFX application that makes filling out immigration forms (e.g. I-485 and I-90) relatively easy.";
-let boggleDescription = "An implementation of the game Boggle in Java.";
-let photographyDescription = "A blog templates that let the blogger to upload and share photos.";
 
 //main App
 class App extends Component {
@@ -64,14 +58,7 @@ class App extends Component {
                     </a>
                     <br />
                 </div>
-                <div className="container-main flex-container padding" id='projects'>
-                    <p className="underline-text width-100"> Projects </p>
-                    <p className="width-100-true" style={{marginBottom: "3rem"}}> Here is a quick overview of the projects that I have worked on: </p>
-                    <Project description={notepadDescription} language='fab fa-js-square' demonstrationLink="https://mithridatium.io" projectName="Notepad Application" link="https://github.com/f-s-plus-plus/notepad"/>
-                    <Project description={immigrationDescription} language='fab fa-java' projectName="Immigrations Form Auto-Filler" link="https://github.com/f-s-plus-plus/immigration-forms-auto-filler"/>
-                    <Project description={photographyDescription} language='fab fa-php' projectName="Photography Site" link="https://github.com/f-s-plus-plus/photography-website"/>
-                    <Project description={boggleDescription} language='fab fa-java' projectName="Boggle" link="https://github.com/f-s-plus-plus/boggle"/>
-                </div>
+                <ProjectsContainer />>
                 <Footer/>
             </div>
         );
