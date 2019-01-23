@@ -58,7 +58,7 @@ class App extends Component {
                     </a>
                     <br />
                 </div>
-                <ProjectsContainer />>
+                <ProjectsContainer />
                 <Footer/>
             </div>
         );
