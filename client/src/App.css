@@ -437,12 +437,6 @@ a:hover {
     -webkit-transition: all .3s ease-in;
 }
 
-.profile-pic:hover {
-    transform: scale(1.05);
-    filter: contrast(150%);
-    cursor: pointer;
-}
-
 .footer {
     display: flex;
     border-top: 1px solid #d1d1d1;
