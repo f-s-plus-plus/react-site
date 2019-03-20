@@ -335,6 +335,13 @@ a:hover {
     font-family: FontAwesome;
 }
 
+.link-nav::before {
+    display: inline;
+    padding-right: .35rem;
+    content: "\f0c1";
+    font-family: FontAwesome;
+}
+
 .linkedin::before {
     display: inline;
     padding-right: .35rem;
@@ -494,6 +501,7 @@ hr {
 .navbar a {
     width: 100%;
     display: flex;
+    font-weight: 400 !important;
     justify-content: center;
     align-items: center;
     color: white;

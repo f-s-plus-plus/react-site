@@ -42,6 +42,9 @@ class Navbar extends Component {
                     <a href="#projects" className="notepad">
                         Projects
                     </a>
+                    <a href="https://mithridatium.io" className="link-nav">
+                        Application
+                    </a>
                 </div>
                 <button onClick={this.toggle} className="active-btn open-navbar-btn">
                 </button>
