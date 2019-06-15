@@ -1,11 +1,6 @@
 * {
-    font-family: Roboto, Arial, sans-serif;
-    font-weight: 300;
-    font-size: 102%;
-}
-
-p {
-    color: #909090;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
 }
 
 *:focus {
@@ -18,7 +13,6 @@ html {
 
 .empty-anchor-custom {
     text-decoration: none;
-    color: #909090;
     background-color: transparent;
     border: none;
     transition: all .3s ease-in;
@@ -41,7 +35,7 @@ html {
 
 body {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #f6f6f6;
     background-size: cover;
     overflow-x: hidden;
 }
@@ -49,14 +43,14 @@ body {
 .react-link {
     padding: .5rem .9rem .5rem .5rem;
     border-radius: 22px;
-    color: #909090;
+    color: #777;
     text-decoration: none;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
 }
 
 .react-link:hover {
-    background-color: rgba(55,55,55,.1);
+    background-color: white;
     text-decoration: none;
 }
 
@@ -68,11 +62,12 @@ body {
 }
 
 .anchor-custom:hover {
-    color: #00a78d;
+    color: #c8b7a0;
     text-decoration: none;
 }
 
 .welcome-box {
+    font-family: "Moon", sans-serif;
     height: 100vh;
     display: flex;
     margin: 0;
@@ -84,7 +79,9 @@ body {
 }
 
 .scroll-down-link {
+    font-family: "Moon", sans-serif;
     opacity: 0;
+    font-size: 1.5rem;
     transition: all .2s ease-in;
     animation: loading-bar 2s ease-in 1s;
     animation-fill-mode: forwards;
@@ -95,7 +92,7 @@ body {
 }
 
 a {
-    color: #909090;
+    color: #777;
     text-decoration: none !important;
     transition: all .2s ease-in;
 }
@@ -117,7 +114,7 @@ a {
 }
 
 .underline-text {
-    border-bottom: 4px solid #00ada7;
+    border-bottom: 4px solid #c8b7a0;
     padding-bottom: 12px;
     text-align: center;
 }
@@ -130,14 +127,21 @@ a {
     flex-direction: column;
     margin: 0 1rem 1rem 1rem;
     width: 20rem;
-    border-radius: 3px;
-    background-color: #fff;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.15);
+    background-color: rgba(40,40,40,.05);
     transition: all .1s ease-in;
 }
 
 .project-container a {
+    font-size: 1.5rem;
     display: inline !important;
+}
+
+.project-container p {
+    color: #777;
+}
+
+.project-title {
+    font-weight: 400;
 }
 
 #resume {
@@ -167,7 +171,7 @@ a {
 }
 
 a:hover {
-    color: #00a78d;
+    color: #c8b7a0;
 }
 
 .open-navbar-btn {
@@ -190,20 +194,22 @@ a:hover {
 
 .active-btn {
     margin-bottom: 3.4rem;
-    color: #909090;
+    box-shadow: 0 3px 7px 1px rgba(0,0,0,.1);
     height: 3rem;
-    border-width: 3px;
+    background-color: #3a3a3a;
     width: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
     border-radius: 2rem;
+    color: #d1d1d1;
+    border: none;
     transition: all .2s ease-in;
 }
 
 .header-1 {
-    font-size: 300%;
+    font-family: "Moon", sans-serif;
+    font-size: 3rem;
     padding: 0 2rem;
     font-weight: 200;
     white-space: nowrap;
@@ -232,7 +238,6 @@ a:hover {
 
 .accordion-container {
     display: flex;
-    width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -257,11 +262,17 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1rem;
-    border-top: 1px solid #d1d1d1;
-    background-color: #fff;
 }
 
+.container-profile {
+    padding: 2rem;
+    width: 80%;
+    background-color: white;;
+}
+
+.container-profile p {
+    color: #333333 !important;
+}
 
 .profile-p {
     display: inline-block !important;
@@ -302,14 +313,14 @@ a:hover {
 
 .container-button {
     background-color: transparent !important;
-    border: 2px solid white;
-    border-radius: 2px;
+    border: 2px solid #f6f6f6;
     font-size: 200%;
-    color: white !important;
+    color: #f6f6f6 !important;
     padding: 2% !important;
 }
 
 .anchor-custom {
+    color: #3a3a3a;
     padding-top: 20vh;
 }
 
@@ -318,7 +329,6 @@ a:hover {
     padding-right: .35rem;
     content: "\f15c";
     font-family: FontAwesome;
-    border-radius: 8px;
 }
 
 .github::before {
@@ -359,23 +369,22 @@ a:hover {
 .tags-container button {
     text-align: center;
     padding: .5rem;
-    color: white;
-    background-color: #00a78d;
+    color: #f6f6f6;
+    background-color: #aaa;
     border: none;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
-    border-radius: 3px;
     z-index: 90;
     margin: 0 .5rem 1rem .5rem;
 }
 
 .active-tag {
-    background-color: #aaa !important;
+    background-color: #c8b7a0 !important;
 }
 
 .tags-container button:hover {
     cursor: pointer;
-    background-color: #d1d1d1;
+    background-color: #666;
 }
 
 .blue {
@@ -383,7 +392,6 @@ a:hover {
 }
 
 .show {
-    background-color: blue;
     display: inline-flex;
 }
 
@@ -391,14 +399,13 @@ a:hover {
     display: none;
 }
 
-
 .post {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 0 2%;
     width: 16rem;
-    color: black;
+    color: #3a3a3a;
     max-width: 80%;
     text-align: center;
 }
@@ -412,13 +419,14 @@ a:hover {
     text-align: center;
     padding: 1rem;
     width: 100%;
-    color: white;
-    background-color: #00a78d;
-    border: none;
+    border-bottom: 2px solid #333333;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     margin-bottom: 1rem;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
-    border-radius: 3px;
 }
 
 .post-head:focus {
@@ -427,8 +435,7 @@ a:hover {
 
 .post-head:hover {
     cursor: pointer;
-    background-color: rgba(0, 167, 141, .8);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .profile-pic {
@@ -437,20 +444,21 @@ a:hover {
     background-repeat: no-repeat;
     width: 10rem;
     height: 10rem;
+    border: 6px solid #d1d1d1;
     border-radius: 50rem;
     margin-bottom: 2rem;
-    margin-top: -8rem;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
 }
 
 .footer {
     display: flex;
-    border-top: 1px solid #d1d1d1;
     justify-content: center;
     align-items: center;
-    height: 6rem;
-    color: #fff;
+    flex-direction: column;
+    height: 8rem;
+    background-color: #eae9e7;
+    color: #f6f6f6;
 }
 
 .navbar-container {
@@ -482,7 +490,7 @@ hr {
     display: flex;
     overflow: hidden;
     box-shadow: 0 3px 7px 1px rgba(0,0,0,.1);
-    background-color: #00a78d;
+    background-color: #3a3a3a;
     transition: all .2s ease-in;
     height: 100vh;
     width: 0;
@@ -504,7 +512,7 @@ hr {
     font-weight: 400 !important;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #d1d1d1;
     text-decoration: none;
     padding: 1rem;
     box-sizing: border-box;
@@ -512,30 +520,33 @@ hr {
 }
 
 .navbar a:hover {
-    color: #00a78d;
-    background-color: white;
+    color: #c8b7a0;
+    background-color: #f6f6f6;
 }
 
 .navbar p {
     font-size: 1.4rem;
-    color: white;
+    color: #f6f6f6;
+}
+
+.download-container {
+    justify-content: center;
+    display: flex;
 }
 
 .download-anchor {
     text-decoration: none;
-    border-radius: 3px;
     padding: 1rem 2rem;
-    margin: 1rem;
     background-color: transparent;
-    border: 2px solid #1a1a1a;
-    color: #1a1a1a;
+    border: 2px solid #3a3a3a;
+    color: #3a3a3a;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
 }
 
 .download-anchor:hover {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #3a3a3a;
+    color: #f6f6f6;
     text-decoration: none;
 }
 
@@ -549,4 +560,9 @@ hr {
     100% {
         opacity: 1;
     }
+}
+
+@font-face {
+    font-family: "Moon";
+    src: url("./static/Summer.otf")
 }

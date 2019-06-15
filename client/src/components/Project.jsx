@@ -21,7 +21,7 @@ class Project extends Component {
     render() {
         return(
             <div className="project-container">
-                <p>
+                <p className="project-title">
                     <i className={this.props.language} />
                     {this.props.projectName}
                 </p>

@@ -8,7 +8,6 @@ let boggleDescription = "An implementation of the game Boggle in Java.";
 let photographyDescription = "A blog templates that let the blogger to upload and share photos.";
 let scraperDescription = "A Node.js application that scraps stories concerning Donald Trump from the New York Times and displays links to them on a website.";
 
-//
 class ProjectsContainer extends Component {
 
     constructor(props) {
@@ -57,6 +56,7 @@ class ProjectsContainer extends Component {
     render() {
         return(
             <div className="container-main flex-container padding" id='projects'>
+                <hr />
                 <p className="underline-text width-100"> Projects </p>
                 <p className="width-100-true" style={{marginBottom: "3rem"}}> Here is a quick overview of the projects that I have worked on </p>
                 <div className="tags-container">
@@ -70,7 +70,7 @@ class ProjectsContainer extends Component {
                     { this.state.isJavaScript ? <Project description={notepadDescription} language='fab fa-js-square' demonstrationLink="https://mithridatium.io" projectName="Notepad Application" link="https://github.com/f-s-plus-plus/notepad"/> : null }
                     { this.state.isJavaScript ? <Project description={scraperDescription} language='fab fa-js-square' projectName="Trumps News Scapper (Hackathon)" link="https://github.com/f-s-plus-plus/trump_news_story_scraper"/> : null }
                     { this.state.isPHP ? <Project description={photographyDescription} language='fab fa-php' projectName="Photography Site" link="https://github.com/f-s-plus-plus/photography-website"/> : null }
-                </div>
+            </div>
         );
     }
 }

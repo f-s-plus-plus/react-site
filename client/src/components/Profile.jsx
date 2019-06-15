@@ -8,13 +8,13 @@ class Profile extends React.Component {
         <div className="profile-box">
             <div className="profile-pic" />
             <p className='underline-text'>
-                Who Am I?
+                WHO AM I?
             </p>
             <p className="profile-text">
                 {this.props.bio}
             </p>
             <br />
-      </div>
+        </div>
     );
   }
 }
