@@ -45,15 +45,15 @@ class Accordion extends React.Component {
             //checks to see if the anchor is going to a link or empty button
             let anchor;
             if(description[key].link == null) {
-                anchor = <button className="empty-anchor-custom" key={index}> {description[key].name} </button>;
+                anchor = <button className="empty-anchor-custom"> {description[key].name} </button>;
             }
             else {
-                anchor = <a className="anchor-custom" key={index} href={description[key].link}> {description[key].name} </a>
+                anchor = <a className="anchor-custom" href={description[key].link}> {description[key].name} </a>
             }
 
             //pushes it to that initially empty
             accordionContent.push(
-                <div className={this.state.isOpen ? 'accordion-open' : 'accordion-close'} ref={this.accordion}>
+                <div  key={index} className={this.state.isOpen ? 'accordion-open' : 'accordion-close'} ref={this.accordion}>
                     {anchor}
                 </div>
             )

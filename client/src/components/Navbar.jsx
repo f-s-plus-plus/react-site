@@ -1,5 +1,28 @@
 import React, { Component } from 'react';
 
+let dictionary = [
+    {
+        link: "https://github.com/f-s-plus-plus",
+        text: "Github"
+    },
+    {
+        link: "https://www.linkedin.com/in/filip-saulean-919624179/",
+        text: "Linkedin"
+    },
+    {
+        link: "#projects",
+        text: "Projects"
+    },
+    {
+        link: "#resume",
+        text: "Resume"
+    },
+    {
+        link: "https://mithridatium.io",
+        text: "Application"
+    }
+];
+
 class Navbar extends Component {
     constructor(props) {
         super(props);
@@ -26,25 +49,24 @@ class Navbar extends Component {
         }
     };
 
+    generateLinks = () => {
+        let links = [];
+        dictionary.forEach( (entry, index) => {
+            links.push(
+                <a key={index} href={entry.link}>
+                    <div className={"navbar-icon " + entry.text.toLowerCase()} />
+                    <p className="a-text"> {entry.text} </p>
+                </a>
+            )}
+        );
+        return links
+    };
+
     render() {
         return(
             <div className='navbar-container'>
                 <div className={this.state.isOpen ? 'navbar navbar-close' : 'navbar navbar-open'}>
-                    <a href="https://github.com/f-s-plus-plus" className="github">
-                        Github
-                    </a>
-                    <a href="https://www.linkedin.com/in/filip-saulean-919624179/" className="linkedin">
-                        Linkedin
-                    </a>
-                    <a href="#resume" className="resume">
-                        Resume
-                    </a>
-                    <a href="#projects" className="notepad">
-                        Projects
-                    </a>
-                    <a href="https://mithridatium.io" className="link-nav">
-                        Application
-                    </a>
+                    {this.generateLinks()}
                 </div>
                 <button onClick={this.toggle} className="active-btn open-navbar-btn">
                 </button>

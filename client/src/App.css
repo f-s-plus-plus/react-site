@@ -1,5 +1,5 @@
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1.1rem;
 }
 
@@ -29,13 +29,13 @@ html {
 .vertical-bar {
     height: 3rem;
     width: 1px;
-    background-color: #d1d1d1;
+    background-color: #8e9397;
     margin: 1rem;
 }
 
 body {
     width: 100%;
-    background-color: #f6f6f6;
+    background-color: #ebeff2;
     background-size: cover;
     overflow-x: hidden;
 }
@@ -43,7 +43,7 @@ body {
 .react-link {
     padding: .5rem .9rem .5rem .5rem;
     border-radius: 22px;
-    color: #777;
+    color: #d1d1d1;
     text-decoration: none;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
@@ -56,18 +56,17 @@ body {
 
 .anchor-custom {
     text-decoration: none;
-    color: #909090;
+    color: #8e9397;
     transition: all .5s ease-in;
     -webkit-transition: all .5s ease-in;
 }
 
 .anchor-custom:hover {
-    color: #c8b7a0;
+    color: #5ea8de;
     text-decoration: none;
 }
 
 .welcome-box {
-    font-family: "Moon", sans-serif;
     height: 100vh;
     display: flex;
     margin: 0;
@@ -79,9 +78,9 @@ body {
 }
 
 .scroll-down-link {
-    font-family: "Moon", sans-serif;
     opacity: 0;
     font-size: 1.5rem;
+    font-weight: 300;
     transition: all .2s ease-in;
     animation: loading-bar 2s ease-in 1s;
     animation-fill-mode: forwards;
@@ -92,7 +91,7 @@ body {
 }
 
 a {
-    color: #777;
+    color: #8e9397;
     text-decoration: none !important;
     transition: all .2s ease-in;
 }
@@ -114,7 +113,7 @@ a {
 }
 
 .underline-text {
-    border-bottom: 4px solid #c8b7a0;
+    border-bottom: 4px solid #5ea8de;
     padding-bottom: 12px;
     text-align: center;
 }
@@ -123,21 +122,24 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem 1rem 1rem;
+    box-sizing: border-box;
+    padding: 1rem;
     flex-direction: column;
-    margin: 0 1rem 1rem 1rem;
     width: 20rem;
+    max-width: calc(100% - 1rem);
+    margin: .5rem;
     background-color: rgba(40,40,40,.05);
     transition: all .1s ease-in;
 }
 
 .project-container a {
+    margin: .25rem;
     font-size: 1.5rem;
     display: inline !important;
 }
 
 .project-container p {
-    color: #777;
+    color: #8e9397;
 }
 
 .project-title {
@@ -147,6 +149,43 @@ a {
 #resume {
     position: absolute;
     top: 100%;
+}
+.social-box {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.element-move-in {
+    animation: element-move-in .75s ease-in;
+}
+
+.element-move-out {
+    animation: element-move-out .75s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes element-move-in {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes element-move-out {
+    0%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
 }
 
 .width-100-true {
@@ -171,7 +210,7 @@ a {
 }
 
 a:hover {
-    color: #c8b7a0;
+    color: #5ea8de;
 }
 
 .open-navbar-btn {
@@ -194,21 +233,26 @@ a:hover {
 
 .active-btn {
     margin-bottom: 3.4rem;
-    box-shadow: 0 3px 7px 1px rgba(0,0,0,.1);
     height: 3rem;
-    background-color: #3a3a3a;
     width: 3rem;
+    box-shadow: 0 3px 7px 1px rgba(0,0,0,.1);
+    background-color: #8e9397;
+    color: #f6f6f6;
     display: flex;
+    border: none;
     justify-content: center;
     align-items: center;
-    border-radius: 2rem;
-    color: #d1d1d1;
-    border: none;
+    border-radius: 4px;
     transition: all .2s ease-in;
 }
 
+
+.active-btn:hover {
+    cursor: pointer;
+    background-color: #5ea8de;
+}
+
 .header-1 {
-    font-family: "Moon", sans-serif;
     font-size: 3rem;
     padding: 0 2rem;
     font-weight: 200;
@@ -233,7 +277,7 @@ a:hover {
 .profile-text {
     display: inline !important;
     text-align: center;
-    margin: 0 3rem;
+    margin: 0 1rem;
 }
 
 .accordion-container {
@@ -259,6 +303,7 @@ a:hover {
 }
 
 .container-main {
+    margin: 0 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,7 +312,9 @@ a:hover {
 .container-profile {
     padding: 2rem;
     width: 80%;
-    background-color: white;;
+    box-sizing: padding-box;
+    margin: auto;
+    background-color: #fafcfe;
 }
 
 .container-profile p {
@@ -326,35 +373,30 @@ a:hover {
 
 .resume::before {
     display: inline;
-    padding-right: .35rem;
     content: "\f15c";
     font-family: FontAwesome;
 }
 
 .github::before {
     display: inline;
-    padding-right: .35rem;
     content: "\f092";
     font-family: FontAwesome;
 }
 
-.notepad::before {
+.projects::before {
     display: inline;
-    padding-right: .35rem;
     content: "\f07b";
     font-family: FontAwesome;
 }
 
-.link-nav::before {
+.application::before {
     display: inline;
-    padding-right: .35rem;
     content: "\f0c1";
     font-family: FontAwesome;
 }
 
 .linkedin::before {
     display: inline;
-    padding-right: .35rem;
     content: "\f08c";
     font-family: FontAwesome;
 }
@@ -379,7 +421,7 @@ a:hover {
 }
 
 .active-tag {
-    background-color: #c8b7a0 !important;
+    background-color: #5ea8de !important;
 }
 
 .tags-container button:hover {
@@ -413,13 +455,15 @@ a:hover {
 .caret-down::after {
     font-family: FontAwesome;
     content: '\f0d7';
+    color: #5ea8de;
+    margin-left: 2rem;
 }
 
 .post-head {
     text-align: center;
     padding: 1rem;
     width: 100%;
-    border-bottom: 2px solid #333333;
+    border-bottom: 2px solid #8e9397;
     background-color: transparent;
     border-top: none;
     border-left: none;
@@ -447,6 +491,7 @@ a:hover {
     border: 6px solid #d1d1d1;
     border-radius: 50rem;
     margin-bottom: 2rem;
+    margin-top: -10rem;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
 }
@@ -457,8 +502,7 @@ a:hover {
     align-items: center;
     flex-direction: column;
     height: 8rem;
-    background-color: #eae9e7;
-    color: #f6f6f6;
+    background-color: #27282a;
 }
 
 .navbar-container {
@@ -470,7 +514,7 @@ a:hover {
 }
 
 hr {
-    background-color: #d1d1d1;
+    background-color: #8e9397;
     height: 2px;
     width: 90%;
     margin: auto 5% 0 5%;
@@ -486,11 +530,21 @@ hr {
     width: 0 !important;
 }
 
+.navbar-icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    margin: 0 auto 0 0;
+    justify-content: center;
+    color: #c1c1c1;
+    align-items: center;
+}
+
 .navbar {
     display: flex;
     overflow: hidden;
     box-shadow: 0 3px 7px 1px rgba(0,0,0,.1);
-    background-color: #3a3a3a;
+    background-color: #3e454c;
     transition: all .2s ease-in;
     height: 100vh;
     width: 0;
@@ -510,23 +564,27 @@ hr {
     width: 100%;
     display: flex;
     font-weight: 400 !important;
-    justify-content: center;
-    align-items: center;
-    color: #d1d1d1;
     text-decoration: none;
-    padding: 1rem;
+    height: 3.5rem;
     box-sizing: border-box;
     transition: all .2s ease-in-out;
 }
 
 .navbar a:hover {
-    color: #c8b7a0;
-    background-color: #f6f6f6;
+    color: #5ea8de;
+    background-color: rgba(40,40,40,.15);
 }
 
 .navbar p {
-    font-size: 1.4rem;
-    color: #f6f6f6;
+    font-size: 1.1rem;
+    color: #c1c1c1;
+    height: 3.5rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 3.5rem);
 }
 
 .download-container {
@@ -550,6 +608,11 @@ hr {
     text-decoration: none;
 }
 
+.hidden {
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+
 @keyframes loading-bar {
     0% {
         opacity: 0;
@@ -560,9 +623,4 @@ hr {
     100% {
         opacity: 1;
     }
-}
-
-@font-face {
-    font-family: "Moon";
-    src: url("./static/Summer.otf")
 }
