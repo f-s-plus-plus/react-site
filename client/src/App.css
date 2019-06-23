@@ -1,5 +1,5 @@
 * {
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.1rem;
 }
 
@@ -122,14 +122,12 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    padding: 1rem;
     flex-direction: column;
-    width: 20rem;
-    max-width: calc(100% - 1rem);
-    margin: .5rem;
     background-color: rgba(40,40,40,.05);
-    transition: all .1s ease-in;
+    transition: all .2s ease-in;
+    margin: .4rem;
+    padding: 1rem;
+    max-width: 20rem;
 }
 
 .project-container a {
@@ -156,23 +154,23 @@ a {
 }
 
 .element-move-in {
-    animation: element-move-in .75s ease-in;
+    animation: element-move-in .35s ease-in;
 }
 
 .element-move-out {
-    animation: element-move-out .75s ease-in;
+    animation: element-move-out .35s ease-in;
     animation-fill-mode: forwards;
 }
 
 @keyframes element-move-in {
     0% {
         opacity: 0;
-        transform: translateX(10rem);
+        transform: translateY(5rem);
     }
     100%
     {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
@@ -180,11 +178,11 @@ a {
     0%
     {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
     100% {
         opacity: 0;
-        transform: translateX(10rem);
+        transform: translateY(5rem);
     }
 }
 
@@ -402,8 +400,8 @@ a:hover {
 }
 
 .tags-container {
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: center;
     padding-bottom: 2rem;
 }
@@ -491,7 +489,7 @@ a:hover {
     border: 6px solid #d1d1d1;
     border-radius: 50rem;
     margin-bottom: 2rem;
-    margin-top: -10rem;
+    margin-top: -7rem;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
 }
@@ -524,19 +522,22 @@ hr {
 
 .navbar-open {
     width: 20rem !important;
+    opacity: 1;
 }
 
 .navbar-close {
     width: 0 !important;
+    opacity: 0;
 }
 
 .navbar-icon {
+    background-color: #5ea8de;
     height: 3.5rem;
     width: 3.5rem;
     display: flex;
-    margin: 0 auto 0 0;
+    margin: 0 2rem 0 0;
     justify-content: center;
-    color: #c1c1c1;
+    color: #fff;
     align-items: center;
 }
 
@@ -547,7 +548,7 @@ hr {
     background-color: #3e454c;
     transition: all .2s ease-in;
     height: 100vh;
-    width: 0;
+    width: 20rem;
     max-width: 80vw;
     flex-wrap: wrap;
     z-index: 50;
@@ -572,12 +573,12 @@ hr {
 
 .navbar a:hover {
     color: #5ea8de;
-    background-color: rgba(40,40,40,.15);
+    background-color: rgba(40,40,40,.25);
 }
 
 .navbar p {
     font-size: 1.1rem;
-    color: #c1c1c1;
+    color: #e1e1e1;
     height: 3.5rem;
     font-weight: 300;
     display: flex;

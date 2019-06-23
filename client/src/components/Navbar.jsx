@@ -55,7 +55,7 @@ class Navbar extends Component {
             links.push(
                 <a key={index} href={entry.link}>
                     <div className={"navbar-icon " + entry.text.toLowerCase()} />
-                    <p className="a-text"> {entry.text} </p>
+                    <p> {entry.text} </p>
                 </a>
             )}
         );

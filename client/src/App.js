@@ -17,7 +17,6 @@ class App extends Component {
                 <Welcome />
                 <Profile />
                 <br />
-                <hr />
                 <ProjectsContainer />
                 <Footer/>
             </div>

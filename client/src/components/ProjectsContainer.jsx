@@ -75,7 +75,7 @@ class ProjectsContainer extends Component {
                     isPHP: true
                 });
                 break;
-            case('all'):
+            default:
                 this.setState({
                     isJavaScript: true,
                     isJava: true,
@@ -87,7 +87,7 @@ class ProjectsContainer extends Component {
 
     render() {
         return(
-            <div ref={this.load} className="container-main" id='projects'>
+            <div ref={this.load} className="container-main">
                 <div className={ this.state.check ? "element-move-in flex-container padding" : "element-move-out flex-container padding" } >
                     <p className="underline-text width-100"> Projects </p>
                     <p className="width-100-true" style={{marginBottom: "3rem"}}> Here is a quick overview of the projects that I have worked on </p>
