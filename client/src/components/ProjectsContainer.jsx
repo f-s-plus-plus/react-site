@@ -1,14 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
+
 import Project from './Project';
 
-//for the descriptions of each project
-let notepadDescription = "A note taking application that has latex enabled and utilizes MongoDB and Node.js.";
-let immigrationDescription = "A JavaFX application that makes filling out immigration forms (e.g. I-485 and I-90) relatively easy.";
-let boggleDescription = "An implementation of the game Boggle in Java.";
-let photographyDescription = "A blog templates that let the blogger to upload and share photos.";
-let scraperDescription = "A Node.js application that scraps stories concerning Donald Trump from the New York Times and displays links to them on a website.";
-
-class ProjectsContainer extends Component {
+class ProjectsContainer extends React.Component {
 
     constructor(props) {
         super(props);
@@ -22,9 +16,6 @@ class ProjectsContainer extends Component {
         this.load = React.createRef();
     };
 
-    componentDidUpdate() {
-    }
-
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
@@ -34,16 +25,13 @@ class ProjectsContainer extends Component {
     }
 
     handleScroll = () => {
-
         let check = true;
-
         let node = this.load.current;
         let height = 0;
         while (node.offsetParent) {
             height += node.offsetTop - node.offsetHeight;
             node = node.offsetParent;
         }
-
         if (window.pageYOffset < height + 100) {
             check = false;
         }
@@ -86,6 +74,13 @@ class ProjectsContainer extends Component {
     };
 
     render() {
+        //for the descriptions of each project
+        const notepadDescription = "A note taking application that has latex enabled and utilizes MongoDB and Node.js.";
+        const immigrationDescription = "A JavaFX application that makes filling out immigration forms (e.g. I-485 and I-90) relatively easy.";
+        const boggleDescription = "An implementation of the game Boggle in Java.";
+        const photographyDescription = "A blog templates that let the blogger to upload and share photos.";
+        const scraperDescription = "A Node.js application that scraps stories concerning Donald Trump from the New York Times and displays links to them on a website.";
+
         return(
             <div ref={this.load} className="container-main" id="projects">
                 <div className={ this.state.check ? "element-move-in flex-container padding" : "element-move-out flex-container padding" } >

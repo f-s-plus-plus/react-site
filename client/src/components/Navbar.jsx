@@ -1,29 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-let dictionary = [
-    {
-        link: "https://github.com/f-s-plus-plus",
-        text: "Github"
-    },
-    {
-        link: "https://www.linkedin.com/in/filip-saulean-919624179/",
-        text: "Linkedin"
-    },
-    {
-        link: "#projects",
-        text: "Projects"
-    },
-    {
-        link: "#resume",
-        text: "Resume"
-    },
-    {
-        link: "https://mithridatium.io",
-        text: "Application"
-    }
-];
-
-class Navbar extends Component {
+//For the sidebar/navbar
+class Navbar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -32,10 +10,12 @@ class Navbar extends Component {
     }
 
     componentDidMount() {
-        this.setState({isOpen: true, accordionStatus: "accordion-close"})
+        this.setState({
+          isOpen: true,
+          accordionStatus: "accordion-close"
+        });
     }
 
-    //for toggling the navbar
     toggle = () => {
         if(!this.state.isOpen) {
             this.setState({
@@ -50,26 +30,51 @@ class Navbar extends Component {
     };
 
     generateLinks = () => {
-        let links = [];
-        dictionary.forEach( (entry, index) => {
-            links.push(
-                <a key={index} href={entry.link}>
-                    <div className={"navbar-icon " + entry.text.toLowerCase()} />
-                    <p> {entry.text} </p>
+      const dictionary = [
+            {
+                link: "https://github.com/f-s-plus-plus",
+                text: "Github"
+            },
+            {
+                link: "https://www.linkedin.com/in/filip-saulean-919624179/",
+                text: "Linkedin"
+            },
+            {
+                link: "#projects",
+                text: "Projects"
+            },
+            {
+                link: "#resume",
+                text: "Resume"
+            },
+            {
+                link: "https://mithridatium.io",
+                text: "Web App"
+            }
+        ];
+
+        return dictionary.map((entry, index) => {
+            return (
+                <a key={ index } href={ entry.link }>
+                    <div className={ "navbar-icon " + entry.text.toLowerCase().replace(" ","-") } />
+                    <p>
+                      { entry.text }
+                    </p>
                 </a>
             )}
         );
-        return links
     };
 
     render() {
         return(
             <div className='navbar-container'>
-                <div className={this.state.isOpen ? 'navbar navbar-close' : 'navbar navbar-open'}>
-                    {this.generateLinks()}
+                <div className={ this.state.isOpen ? 'navbar navbar-close' : 'navbar navbar-open' }>
+                    { this.generateLinks() }
                 </div>
-                <button onClick={this.toggle} className="active-btn open-navbar-btn">
-                </button>
+                <button
+                    onClick={ this.toggle }
+                    className="active-btn open-navbar-btn"
+                />
             </div>
         );
     }

@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 /* the main container that appears when the site loads*/
-class Welcome extends Component {
-
+class Welcome extends React.Component {
     render() {
         return (
             <div className="welcome-box">

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
-import Navbar from "./components/Navbar.jsx";
-import Profile from "./components/Profile.jsx";
-import Welcome from "./components/Welcome.jsx";
 
 import Footer from './components/Footer';
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
 import ProjectsContainer from './components/ProjectsContainer';
+import Welcome from "./components/Welcome";
+
+import './App.css';
 
 //main App
 class App extends Component {

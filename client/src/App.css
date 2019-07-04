@@ -1,5 +1,5 @@
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1.1rem;
 }
 
@@ -282,6 +282,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .accordion-open {
@@ -387,7 +388,7 @@ a:hover {
     font-family: FontAwesome;
 }
 
-.application::before {
+.web-app::before {
     display: inline;
     content: "\f0c1";
     font-family: FontAwesome;
