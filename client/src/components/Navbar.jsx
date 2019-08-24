@@ -1,6 +1,6 @@
 import React from 'react';
 
-//For the sidebar/navbar
+//For the sidebar
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -24,7 +24,7 @@ class Navbar extends React.Component {
   generateLinks = () => {
     const actions = ["Profile", "Projects"].map((entry, index) => {
       return (<button key={`action-${index}`} onClick={() => this.props.changePage(index)}>
-        <div className="navbar-icon"/>
+        <div className={`navbar-icon ${entry.toLowerCase()}`}/>
         <p>
           {entry}
         </p>
@@ -43,7 +43,7 @@ class Navbar extends React.Component {
       }
     ].map((entry, index) => {
       return (<a key={`link-${index}`} href={entry.link}>
-        <div className="navbar-icon"/>
+        <div className={`navbar-icon ${entry.text.replace(' ', '-').toLowerCase()}`}/>
         <p>
           {entry.text}
         </p>

@@ -28,7 +28,7 @@ class App extends Component {
     const components = [
       <Profile/>,
       <ProjectsContainer/>
-    ]
+    ];
     return (<div className="App">
       <Navbar changePage={this.changePage}/>
       {components[this.state.page]}
